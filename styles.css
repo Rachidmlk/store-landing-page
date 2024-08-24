@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+}
+
+header {
+    background-image: url("https://images.pexels.com/photos/1190829/pexels-photo-1190829.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+
+& a {
+    font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+  
+}
+}
+.section-title {
+    margin: 35px;
+    margin-top: 50px;
+    text-align: center;
+    text-shadow: 2px 2px 20px pink;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 25px;
+    margin-bottom: 15px;
+}
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    font-weight: bold;
+   
+    & p {
+        margin: 12px 0;
+    }
+    & button {
+        border: none;
+        border-radius: 5px;
+        width: 100px;
+        height: 35px;
+        background-color: #E9D8CE;
+        font-weight: inherit;
+        
+    }
+    &:nth-child(2) button {
+        background-color: #F9B9E8;
+        font-weight: inherit;
+
+    }
+    &:nth-child(3) button {
+        background-color: #E0BFAB;
+        font-weight: inherit;
+    }
+
+    &:nth-child(4) button {
+        background-color: #AADDFF;
+        font-weight: inherit;
+    }
+}
+footer {
+    background-color: #F1ECF0;
+    height: 30px;
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    font-weight: 600;
+}
+/* ---------------Media queries---------------- */
+
+@media screen and (min-width: 900px) {
+
+    header {
+        
+        background-position: center;
+        width: 100%;
+        height: 970px;
+        padding-top: 40px;
+    
+    & a {
+        
+      font-size: 74px;
+      
+    }
+    }
+    .section-title {
+        margin: 55px;
+        margin-top: 80px;
+        text-shadow: 5px 5px 40px pink;
+        font-size: 70px;
+    }
+    img {
+    
+        height: 320px;
+        margin-bottom: 15px;
+    }
+    .item {
+        padding: 30px;
+        
+    }
+    footer {
+        height: 30px;
+    }
+
+    .product-sec {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        gap: 20px;
+    }
+
+    
+}
+
+
+
+
